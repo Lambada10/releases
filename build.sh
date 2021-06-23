@@ -23,6 +23,7 @@ elif [ "${ccache}" == "true" ] && [ -z "${ccache_size}" ]; then
     echo "Please set the ccache_size variable in your config."
     exit 1
 fi
+build/soong/soong_ui.bash --make-mode
 lunch "${rom_vendor_name}_${device}-${buildtype}"
 rm "${outdir}"/*$(date +%Y)*.zip*
 if [ "${clean}" == "clean" ]; then
