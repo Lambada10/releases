@@ -26,10 +26,10 @@ fi
 lunch "${rom_vendor_name}_${device}-${buildtype}"
 rm "${outdir}"/*$(date +%Y)*.zip*
 if [ "${clean}" == "clean" ]; then
-    mka clean
-    mka clobber
+    make clean
+    make clobber
 elif [ "${clean}" == "installclean" ]; then
-    mka installclean
+    make installclean
 fi
 mka "${bacon}"
 BUILD_END=$(date +"%s")
