@@ -57,6 +57,8 @@ export zip_name=$(echo "${finalzip_path}" | sed "s|${outdir}/||")
 export tag=$( echo "${zip_name}-$(date +%H%M)" | sed 's|.zip||')
 if [ -e "${finalzip_path}" ]; then
     echo "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds"
+    curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAACAgUAAxkBAAEKizNg1iGp3Ab536Qz86F_Esy7chQvHAACOwEAAnBI8ReBayrk9vj3ciAE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
+
 
     echo "Uploading"
 
