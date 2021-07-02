@@ -61,7 +61,7 @@ if [ -e "${finalzip_path}" ]; then
 
 
     echo "Uploading"
-
+    gdrive upload $zip_name 
     github-release "${release_repo}" "${tag}" "master" "${ROM} for ${device}
 
 Date: $(env TZ="${timezone}" date)" "${finalzip_path}"
@@ -113,7 +113,9 @@ Download incremental update: ["incremental_ota_update.zip"]("https://github.com/
         else
             telegram -M "Build completed successfully in $((BUILD_DIFF / 60)) minute(s) and $((BUILD_DIFF % 60)) seconds
 
-Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")"
+Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")
+
+Download from my Website: ["${zip_name}"](https://dl.ayokaacr.de/DotOS-Sofiap/${zip_name})"
         fi
     fi
 curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
