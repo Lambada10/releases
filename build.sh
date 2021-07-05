@@ -115,7 +115,7 @@ Download incremental update: ["incremental_ota_update.zip"]("https://github.com/
 
 Download: ["${zip_name}"]("https://github.com/${release_repo}/releases/download/${tag}/${zip_name}")
 
-Download from my Website: ["${zip_name}"]("https://dl.ayokaacr.de/${device}/${zip_name}")"
+Download from my Website: ["${zip_name}"]("https://dl.ayokaacr.de/2:/${zip_name}")"
         fi
     fi
 curl --data parse_mode=HTML --data chat_id=$TELEGRAM_CHAT --data sticker=CAADBQADGgEAAixuhBPbSa3YLUZ8DBYE --request POST https://api.telegram.org/bot$TELEGRAM_TOKEN/sendSticker
