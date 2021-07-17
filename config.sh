@@ -3,7 +3,7 @@
 export GITHUB_USER="alexwcrafter"
 export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
-export device="sofiar"
+export device="sofiap"
 
 export ROM="lineageos"
 export ROM_DIR="${WORKSPACE}/rom"
