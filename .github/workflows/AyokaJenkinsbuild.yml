@@ -27,5 +27,5 @@ jobs:
         user: "githubbuilder"
         job-path: "job/folder_name/job/job_name"
         job-params: "{'param1': 'value1', 'param2': 'value2'}"
-    - name: Get job status
+    - name: Current Job Status
       run: echo "Current Status: ${{ steps.job-build.outputs.job_status }}"
