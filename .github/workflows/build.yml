@@ -19,4 +19,4 @@ jobs:
           job-params: "{}"
 
       - name: Current Build Status
-        run: echo "${{ steps.job-build.outputs.job_status }}
+        run: echo "${{ steps.job-build.outputs.job_status }}"
