@@ -7,6 +7,7 @@ on:
 jobs:
   ppui-A11:
     runs-on: ubuntu-latest
+    caption: Building PPUI Android 11
 
     steps:
       - uses: actions/checkout@v2
