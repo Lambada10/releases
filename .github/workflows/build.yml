@@ -1,0 +1,22 @@
+name: Builds
+
+on:
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: "Starting Build..."
+        uses: GoldenspearLLC/build-jenkins-job@master
+        with:
+          jenkins-url: ${{ secrets.JENKINS_URL }}
+          jenkins-token: ${{ secrets.JENKINS_TOKEN }}
+          user: "ayokaacr"
+          job-path: "/home/build/line/releases-1/"
+          job-params: "{}"
+
+      - name: Current Build Status
+        run: echo "Status: ${{ steps.job-build.outputs.job_status }}"
