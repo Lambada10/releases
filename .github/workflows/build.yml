@@ -4,7 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
-title: Yet Another Android Build
+title: "Yet Another Android Build"
   build:
     runs-on: ubuntu-latest
 
