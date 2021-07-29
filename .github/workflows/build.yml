@@ -7,7 +7,6 @@ jobs:
     caption:
       description: "Workflow caption:"
       default: Yet Another Android Build
-
   build:
     runs-on: ubuntu-latest
 
