@@ -1,8 +1,11 @@
 name: Builds
-title: Yet Another Android Build
+
 
 on:
   workflow_dispatch:
+    title:
+      description: "Workflow Title:"
+      default: Yet Another Android Build
 
 jobs:
   build:
