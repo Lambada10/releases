@@ -9,6 +9,7 @@ on:
         default: Yet Another Android Build
 
 jobs:
+  caption: ${{ github.event.inputs.caption }}
   build:
     runs-on: ubuntu-latest
 
