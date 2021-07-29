@@ -1,10 +1,10 @@
 name: Builds
+title: Yet Another Android Build
 
 on:
   workflow_dispatch:
 
 jobs:
-title: "Yet Another Android Build"
   build:
     runs-on: ubuntu-latest
 
