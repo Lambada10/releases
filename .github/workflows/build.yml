@@ -11,6 +11,7 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    title: ${{ github.event.inputs.title }}
 
     steps:
       - uses: actions/checkout@v2
