@@ -2,6 +2,11 @@ name: Builds
 
 on:
   workflow_dispatch:
+    inputs:
+      caption:
+        description: "Workflow caption:"
+        required: false
+        default: Yet Another Android Build
 
 jobs:
   build:
