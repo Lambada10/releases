@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  lineage18.1_sofiap:
+  lineage18_1_sofiap:
     runs-on: ubuntu-latest
 
     steps:
