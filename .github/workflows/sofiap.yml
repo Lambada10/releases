@@ -1,11 +1,11 @@
-name: Builds
+name: Sofiap Builds
 
 
 on:
   workflow_dispatch:
 
 jobs:
-  lineage18_1_sofiap:
+  lineage18-1:
     runs-on: ubuntu-latest
 
     steps:
