@@ -2,14 +2,12 @@ name: Builds
 
 on:
   workflow_dispatch:
-    inputs:
-      caption:
-        description: "Workflow caption:"
-        required: false
-        default: Yet Another Android Build
 
 jobs:
-  caption: ${{ github.event.inputs.caption }}
+    caption:
+      description: "Workflow caption:"
+      default: Yet Another Android Build
+
   build:
     runs-on: ubuntu-latest
 
