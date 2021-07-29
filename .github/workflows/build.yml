@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
 
 jobs:
+title: Yet Another Android Build
   build:
     runs-on: ubuntu-latest
 
@@ -16,7 +17,7 @@ jobs:
           jenkins-token: ${{ secrets.JENKINS_TOKEN }}
           user: "ayokaacr"
           job-path: "/home/build/line/releases-1/"
-          job-params: "{}"
+          job-params: 
 
       - name: Current Build Status
         run: echo "${{ steps.job-build.outputs.job_status }}"
