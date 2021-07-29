@@ -3,9 +3,10 @@ name: Builds
 
 on:
   workflow_dispatch:
-    title:
-      description: "Workflow Title:"
-      default: Yet Another Android Build
+    inputs:
+      title:
+        description: "Workflow Title:"
+        default: Yet Another Android Build
 
 jobs:
   build:
