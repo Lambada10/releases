@@ -1,17 +1,12 @@
-name: Builds
+name: Yet Another Android Build
 
 
 on:
   workflow_dispatch:
-    inputs:
-      title:
-        description: "Workflow Title:"
-        default: Yet Another Android Build
 
 jobs:
   build:
     runs-on: ubuntu-latest
-    title: ${{ github.event.inputs.title }}
 
     steps:
       - uses: actions/checkout@v2
