@@ -5,7 +5,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  lineage18-1:
+  StellarOS:
     runs-on: ubuntu-latest
 
     steps:
