@@ -16,7 +16,7 @@ jobs:
           jenkins-url: ${{ secrets.JENKINS_URL }}
           jenkins-token: ${{ secrets.JENKINS_TOKEN }}
           user: "ayokaacr"
-          job-path: "/home/build/line/releases-1/"
+          job-path: "StellarOS-sofiap"
           job-params: 
 
       - name: Current Build Status
