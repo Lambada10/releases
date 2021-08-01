@@ -17,7 +17,7 @@ cores=$(nproc --all)
 if [ "${cores}" -gt "12" ]; then
     cores=12
 fi
-repo sync --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune "-j${cores}" -c -v --reference /home/build/line/releases-1/rom
+repo sync --force-sync --no-tags --no-clone-bundle --optimized-fetch --prune "-j${cores}" -c -v
 syncsuccessful="${?}"
 SYNC_END=$(date +"%s")
 SYNC_DIFF=$((SYNC_END - SYNC_START))
