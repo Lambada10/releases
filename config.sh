@@ -3,7 +3,7 @@
 export GITHUB_USER="alexwcrafter"
 export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
-export device="sm6125-unified"
+export device="sm6125_unified"
 
 export ROM="StellarOS"
 export ROM_DIR="${WORKSPACE}/rom"
