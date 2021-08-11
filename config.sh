@@ -3,13 +3,13 @@
 export GITHUB_USER="alexwcrafter"
 export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
-export device="montana"
+export device="sofiap"
 
 export ROM="StellarOS"
 export ROM_DIR="${WORKSPACE}/rom"
 export ROM_VERSION="S1"
-export official="true"
-export local_manifest_url=""
+export official="false"
+export local_manifest_url="https://github.com/ACRBuilds/local_manifests/raw/main/line-sofiar.xml"
 export manifest_url="https://github.com/Stellar-OS/android"
 export rom_vendor_name="lineage"
 export branch="stellar-S1"
