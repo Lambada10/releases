@@ -3,13 +3,13 @@
 export GITHUB_USER="alexwcrafter"
 export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
-export device="dumpling"
+export device="sofiap"
 
 export ROM="ShapeShiftOS"
 export ROM_DIR="${WORKSPACE}/rom"
 export ROM_VERSION="11"
 export official="false"
-export local_manifest_url="https://github.com/Hlcpereira/local_manifests/raw/master/oneplus_msm8998_default.xml"
+export local_manifest_url="https://github.com/ACRBuilds/local_manifests/raw/main/line-sofiar.xml"
 export manifest_url="https://github.com/ShapeShiftOS/android_manifest"
 export rom_vendor_name="lineage"
 export branch="android_11"
