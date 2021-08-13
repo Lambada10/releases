@@ -24,6 +24,6 @@ export ccache_size=""
 
 export jenkins="true"
 
-export release_repo="ACRBuilds/releases-1"
+export release_repo="ACRBuilds/releases"
 
 export timezone="UTC"
