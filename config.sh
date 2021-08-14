@@ -4,26 +4,26 @@ export GITHUB_USER="alexwcrafter"
 export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
 export device="sofiap"
-
-export ROM="ProjectSakura"
+export ROM="StellarOS"
 export ROM_DIR="${WORKSPACE}/rom"
-export ROM_VERSION="11"
+export ROM_VERSION="S1"
 export official="false"
 export local_manifest_url="https://github.com/ACRBuilds/local_manifests/raw/main/line-sofiar.xml"
-export manifest_url="https://github.com/ProjectSakura/android"
+export manifest_url="https://github.com/Stellar-OS/android"
 export rom_vendor_name="lineage"
-export branch="11"
+export branch="stellar-S1"
 export bacon="bacon"
 export buildtype="userdebug"
 export clean="installclean"
 export generate_incremental=""
 export upload_recovery="false"
+export STELLAR_BUILD_TYPE=gapps
 
 export ccache="false"
 export ccache_size=""
 
 export jenkins="true"
 
-export release_repo="ACRBuilds/releases"
+export release_repo="ACRBuilds/releases-1"
 
 export timezone="UTC"
