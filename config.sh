@@ -17,13 +17,12 @@ export buildtype="userdebug"
 export clean="installclean"
 export generate_incremental=""
 export upload_recovery="false"
-export STELLAR_BUILD_TYPE=gapps
 
 export ccache="false"
 export ccache_size=""
 
 export jenkins="true"
 
-export release_repo="ACRBuilds/releases-1"
+export release_repo="ACRBuilds/releases"
 
 export timezone="UTC"
