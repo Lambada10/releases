@@ -4,7 +4,7 @@ export GITHUB_USER="alexwcrafter"
 export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
 export device="Teos"
-export ROM="CM-"
+export ROM="LineageOS"
 export ROM_DIR="${WORKSPACE}/rom"
 export ROM_VERSION="14"
 export official="false"
