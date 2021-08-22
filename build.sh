@@ -31,7 +31,7 @@ if [ "${clean}" == "clean" ]; then
 elif [ "${clean}" == "installclean" ]; then
     make installclean
 fi
-make "${bacon}"
+make "${bacon}" -j$(nproc --all)
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 
