@@ -31,7 +31,7 @@ if [ "${clean}" == "clean" ]; then
 elif [ "${clean}" == "installclean" ]; then
     make installclean
 fi
-make "${bacon}" -j$(nproc --all)
+brunch "${device}" "${buildtype}"
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 
