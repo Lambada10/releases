@@ -5,7 +5,7 @@ export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
 export device="teos"
 export ROM="LineageOS"
-export ROM_DIR="/home/appveyor/build/rom"
+export ROM_DIR="${WORKSPACE}/rom"
 export ROM_VERSION="14"
 export official="false"
 export local_manifest_url="https://github.com/windowzytch/platform_manifest/raw/cm-14.1/teos_staging.xml"
@@ -21,7 +21,7 @@ export upload_recovery="false"
 export ccache="false"
 export ccache_size=""
 
-export jenkins="false"
+export jenkins="true"
 
 export release_repo="ACRBuilds/releases"
 
