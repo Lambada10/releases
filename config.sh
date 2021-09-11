@@ -4,9 +4,9 @@ export GITHUB_USER="alexwcrafter"
 export GITHUB_EMAIL="kontakt@ayokaacr.de"
 
 export device="cedric"
-export ROM="Stellar-Weeb"
+export ROM="Stellar OS Weeb Edition"
 export ROM_DIR="${WORKSPACE}/rom"
-export ROM_VERSION="OwO? Whats dis?"
+export ROM_VERSION="S1.1 Staging \"Arisa\""
 export official="false"
 export local_manifest_url=""
 export manifest_url="https://github.com/Stellar-Weeb/android"
@@ -23,6 +23,6 @@ export ccache_size=""
 
 export jenkins="true"
 
-export release_repo="windowzytch/ACRReleases"
+export release_repo="ACRBuilds/releases"
 
 export timezone="UTC"

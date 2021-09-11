@@ -11,7 +11,7 @@ if [ "${official}" != "true" ]; then
     if [ -f .repo/local_manifests/manifest.xml ]; then
         rm .repo/local_manifests/manifest.xml
     fi
-    wget "${local_manifest_url}" -O .repo/local_manifests/manifest.xml
+    # wget "${local_manifest_url}" -O .repo/local_manifests/manifest.xml
 fi
 cores=$(nproc --all)
 if [ "${cores}" -gt "12" ]; then
