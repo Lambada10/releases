@@ -14,7 +14,7 @@ export rom_vendor_name="stellar"
 export branch="stellar-S1-staging"
 export bacon="bacon"
 export buildtype="userdebug"
-export clean="installclean"
+export clean="clean"
 export generate_incremental=""
 export upload_recovery="false"
 
