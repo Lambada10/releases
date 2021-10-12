@@ -61,7 +61,7 @@ if [ -e "${finalzip_path}" ]; then
 
 
     echo "Uploading"
-    gdrive upload $zip_name
+    gdrive upload "${zip_name}"
     github-release "${release_repo}" "${tag}" "master" "${ROM} for ${device}
 
 Date: $(env TZ="${timezone}" date)" "${finalzip_path}"
