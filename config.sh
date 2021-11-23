@@ -1,28 +1,28 @@
 #!/bin/bash
 
-export GITHUB_USER="alexwcrafter"
-export GITHUB_EMAIL="kontakt@ayokaacr.de"
+export GITHUB_USER="windowz414"
+export GITHUB_EMAIL="windowz414@gnuweeb.org"
 
-export device="sofiap"
-export ROM="Lineage"
-export ROM_DIR="${WORKSPACE}/rom"
-export ROM_VERSION="19.0"
+export device="teos"
+export ROM="AospExtended"
+export ROM_DIR="~/aex"
+export ROM_VERSION="7.x"
 export official="false"
-export local_manifest_url="https://github.com/ACRBuilds/local_manifests/raw/a1f551f3c16c7609a7cbb22e863708a1607d6d20/line-sofiar.xml"
-export manifest_url="https://github.com/LineageOS/android"
-export rom_vendor_name="lineage"
-export branch="lineage-19.0"
-export bacon="bacon"
+export local_manifest_url="https://github.com/teos-dev/manifests/raw/nougat-mr2/aex.xml"
+export manifest_url="https://github.com/AospExtended/manifest"
+export rom_vendor_name="aosp"
+export branch="7.x"
+export bacon="aex"
 export buildtype="userdebug"
 export clean="installclean"
 export generate_incremental=""
-export upload_recovery="true"
+export upload_recovery="false"
 
 export ccache="false"
 export ccache_size=""
 
-export jenkins="true"
+export jenkins="false"
 
-export release_repo="ACRBuilds/releases"
+export release_repo="windowz414/releases"
 
 export timezone="UTC"
