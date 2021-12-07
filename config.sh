@@ -5,6 +5,8 @@ export RELEASES_DIR=$(pwd)
 export GITHUB_USER="Bedirhan KURT"
 export GITHUB_EMAIL="windowz414@gnuweeb.org"
 
+export HASTE_SERVER="https://paste.ayokaacr.tk"
+
 export device="teos"
 export ROM="LineageOS"
 export ROM_DIR="${HOME}/lin15"
