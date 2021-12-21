@@ -17,9 +17,10 @@ if [[ ! -z ${local_manifest_url} ]]; then
     fi
 else
     git clone ${devicetree} -b ${devicebranch} ${devicepath}
-    git clone ${devicetreecommon} -b ${devicebranchcommon} ${devicepathcommon}
+    git clone ${extras} -b ${extrasbranch} ${extraspath}
     git clone ${kerneltree} -b ${kernelbranch} ${kernelpath}
     git clone ${vendortree} -b ${vendorbranch} ${vendorpath}
+    git clone ${hardware} -b ${hardwarebranch} ${hardwarepath}
 fi
 cores=$(nproc --all)
 if [ "${cores}" -gt "12" ]; then

@@ -24,8 +24,7 @@ elif [ "${ccache}" == "true" ] && [ -z "${ccache_size}" ]; then
     echo "Please set the ccache_size variable in your config."
     exit 1
 fi
-lunch "${rom_vendor_name}_${device}-${buildtype}"
-rm "${outdir}"/*$(date +%Y)*.zip*
+rm "${outdir}"/*${date +%Y}*.zip*
 if [ "${clean}" == "clean" ]; then
     make clean
     make clobber
@@ -34,10 +33,9 @@ elif [ "${clean}" == "installclean" ]; then
 fi
 (( cores = $(nproc --all) * 2 ))
 export cores
-make "${bacon}" -j${cores} | tee log.txt
+brunch "${rom_vendor_name}_${device}-${buildtype}" -j${cores} |tee log.txt
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
-
 if [ "${generate_incremental}" == "true" ]; then
     if [ -e "${ROM_DIR}"/*target_files*.zip ]; then
         export old_target_files_exists=true

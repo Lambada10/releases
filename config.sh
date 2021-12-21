@@ -2,21 +2,21 @@
 
 export RELEASES_DIR=$(pwd)
 
-export GITHUB_USER="Bedirhan KURT"
-export GITHUB_EMAIL="windowz414@gnuweeb.org"
+export GITHUB_USER="Lambada10"
+export GITHUB_EMAIL="62511588+Lambada10@users.noreply.github.com"
 
 export HASTE_SERVER="https://paste.ayokaacr.tk"
 
-export device="teos"
-export ROM="LineageOS"
-export ROM_DIR="${HOME}/lin15"
-export ROM_VERSION="15.1"
+export device="vayu"
+export ROM="StatiXOS"
+export ROM_DIR="${HOME}/statix"
+export ROM_VERSION="5.0"
 export official="false"
-export local_manifest_url="https://github.com/windowz414/platform_manifest/raw/lineage-15.1/teos.xml"
-export manifest_url="https://github.com/LineageOS/android"
-export referencedir="${HOME}/e-oreo"
-export rom_vendor_name="lineage"
-export branch="lineage-15.1"
+# export local_manifest_url="https://github.com/windowz414/platform_manifest/raw/lineage-15.1/teos.xml"
+export manifest_url="https://github.com/statixos/android_manifest"
+# export referencedir="${HOME}/e-oreo"
+export rom_vendor_name="statix"
+export branch="sc"
 export bacon="bacon"
 export buildtype="userdebug"
 export clean="installclean"
@@ -28,12 +28,13 @@ export ccache_size=""
 
 export jenkins="false"
 
-export release_repo="windowz414/releases"
+export release_repo="Lambada10/releases"
 
 export timezone="UTC"
 
 # You'll need to configure these accordingly. Also edit sync.sh accordingly too.
-export devicetree="https://github.com/teos-dev/android_device_vestel_teos-lin15" devicepath="device/vestel/teos" devicebranch="lineage-15.1"
-export devicetreecommon="https://github.com/teos-dev/android_device_vestel_msm8920-common" devicepathcommon="device/vestel/msm8920-common" devicebranchcommon="lineage-15.1"
-export kerneltree="https://github.com/teos-dev/android_kernel_vestel_msm8920" kernelpath="kernel/vestel/msm8920" kernelbranch="lineage-15.1"
-export vendortree="https://github.com/teos-dev/android_vendor_vestel-lin15" vendorpath="vendor/vestel" vendorbranch="lineage-15.1"
+export devicetree="https://github.com/lambada-vayu-lab/device_xiaomi_vayu-statix" devicepath="device/xiaomi/vayu" devicebranch="arrow-12.0"
+export extras="https://github.com/ArrowOS-Devices/android_device_xiaomi_extras" extraspath="device/xiaomi/extras" extrasbranch="arrow-12.0"
+export kerneltree="https://github.com/ArrowOS-Devices/android_kernel_xiaomi_vayu" kernelpath="kernel/xiaomi/vayu" kernelbranch="arrow-12.0"
+export vendortree="https://github.com/ArrowOS-Devices/android_vendor_xiaomi_vayu" vendorpath="vendor/xiaomi/vayu" vendorbranch="arrow-11.0"
+export hardware="https://github.com/ArrowOS-Devices/android_hardware_xiaomi" hardwarepath="hardware/xiaomi" hardwarebranch="arrow-12.0"
