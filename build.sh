@@ -24,7 +24,7 @@ elif [ "${ccache}" == "true" ] && [ -z "${ccache_size}" ]; then
     echo "Please set the ccache_size variable in your config."
     exit 1
 fi
-rm "${outdir}"/*${date +%Y}*.zip*
+rm "${outdir}"/*$(date +%Y)*.zip*
 if [ "${clean}" == "clean" ]; then
     make clean
     make clobber
