@@ -1,5 +1,6 @@
 #!/bin/bash
 
+source "${my_dir}/config.sh"
 export outdir="${ROM_DIR}/out/target/product/${device}"
 BUILD_START=$(date +"%s")
 echo "Build started for ${device}"
@@ -33,7 +34,10 @@ elif [ "${clean}" == "installclean" ]; then
 fi
 (( cores = $(nproc --all) * 2 ))
 export cores
-brunch "${rom_vendor_name}_${device}-${buildtype}" -j${cores} |tee log.txt
+export ARROW_GAPPS=true
+# lunch "${rom_vendor_name}_${device}-${buildtype}" "${rom_vendor_name}_${device}-${buildtype}"
+# make "${bacon}"
+brunch "${rom_vendor_name}_${device}-${buildtype}" "${rom_vendor_name}_${device}-${buildtype}" -j${cores} |tee log.txt
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 if [ "${generate_incremental}" == "true" ]; then
