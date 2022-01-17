@@ -9,6 +9,8 @@ if [ "${jenkins}" == "true" ]; then
 else
     telegram -M "Build started for ${device}"
 fi
+#cd "${ROM_DIR}/packages/apps/Settings" && git am ~/add*.patch
+#cd "${ROM_DIR}"
 source build/envsetup.sh
 source "${my_dir}/config.sh"
 export RELEASES_DIR=$(echo $(cd -))
@@ -35,9 +37,10 @@ fi
 (( cores = $(nproc --all) * 2 ))
 export cores
 export ARROW_GAPPS=true
+export WITH_GMS=true
 # lunch "${rom_vendor_name}_${device}-${buildtype}" "${rom_vendor_name}_${device}-${buildtype}"
 # make "${bacon}"
-brunch "${rom_vendor_name}_${device}-${buildtype}" -j${cores} | tee log.txt
+brunch "${rom_vendor_name}_${device}-${buildtype}" -j${cores}
 BUILD_END=$(date +"%s")
 BUILD_DIFF=$((BUILD_END - BUILD_START))
 if [ "${generate_incremental}" == "true" ]; then
