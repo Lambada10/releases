@@ -9,8 +9,8 @@ if [ "${jenkins}" == "true" ]; then
 else
     telegram -M "Build started for ${device}"
 fi
-#cd "${ROM_DIR}/packages/apps/Settings" && git am ~/add*.patch
-#cd "${ROM_DIR}"
+cd "${ROM_DIR}/packages/apps/Settings" && git am ~/add*.patch
+cd "${ROM_DIR}"
 source build/envsetup.sh
 source "${my_dir}/config.sh"
 export RELEASES_DIR=$(echo $(cd -))
